@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Intern Application</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- UNDERSTANDING THE CHARSETS: 
+		"&#ndash;" = "-", 
+		"&#33;" = "!", 
+		"&#36;" = "$", 
+		"&#39" = "'", 
+		"&#40;" = "(", 
+		"&#41;" = ")", 
+		"&#44;" = ",", 
+		"&#46;" = "." 
+	-->		
+</head>
+
+<body id="page-wrapper">
+	<header>
+		<a href="index.html"><img src="images/mvp-logo-white.svg" alt="MVP logo white" class="logo"></a>
+
+		<!--  This menu appears at a max of 554px -->
+		<nav id="menu">
+			<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<button class="btn-hamburger-js-slideout-toggle"></button> 
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="us.html">WHO WE ARE</a></li>
+						<li><a href="how.html">HOW IT WORKS</a></li>
+						<li><a href="showcase.html">SHOWCASE</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>		
+	</header>
+
+	<div id="page-content">
+		<nav class="top-nav">
+			<ul class="top-nav-normal-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="us.html">WHO WE ARE</a></li>
+				<li><a href="how.html">HOW IT WORKS</a></li>
+				<li><a href="showcase.html">SHOWCASE</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h1>INTERN ONBOARDING</h1>
+
+			<div class="content">
+				<div class="text-participating">
+					<p>MVP Studio is all about connecting people with tech ideas with people who can help make those ideas a reality&#46; Teamwork is where all the action is&#44; so we desire to be a means of connections and provisions&#46; As an intern&#44; you will work with the pros to develop your understanding of how tech works&#46; You will also be called upon to provide your thoughts and insights as we work together to make projects a reality&#46;</p>
+				</div>
+
+				<div class="intern-form">
+					<form action="/form-api/v/1/t/intern" method="post" id="form">
+						<fieldset>
+							<ul>
+								<li><label for="name">name<br> 
+									<input type="text" name="name" id="name" maxlength="100" required></label>
+								</li>
+								<li><label for="email">email<br>
+									<input type="email" name="email" id="email" maxlength="100" required></label>
+								</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<ul>
+								<li><label for="school">school<br>
+									<input type="text" name="school" id="school" maxlength="100"></label>
+								</li>
+								<li><label>major<br>
+									<input type="text" name="major" id="major" maxlength="100"></label>
+								</li>
+							</ul>
+
+							<p>please let us know which term and year you are planning on completing your internship</p>
+
+							<p>term<br> <!-- SHOULD THIS BE A SELECT ONE ONLY OR MULITPLE TERMS? -->
+								<select form="form">
+									<option>fall</option>
+									<option>winter</option>
+									<option>spring</option>
+									<option>summer</option>
+								</select>
+							</p>
+
+							<p>year<br>
+								<input type="number" name="year" id="formYear" placeholder="yyyy">
+							</p>
+						</fieldset>
+
+
+						<fieldset>	
+							<ul>	
+								<li>your skill sets<br>
+									<ul>
+										<li><input type="checkbox" name="skill" value="designer">designer</li>
+										<li><input type="checkbox" name="skill" value="developer">developer</li>
+										<li><input type="checkbox" name="skill-category" value="agile pm">agile pm</li>
+									</ul>
+								</li>
+							</ul>
+
+							<p>i can dedicate 
+								<select form="form">
+									<option>5&ndash;10</option>
+									<option>10&ndash;15</option>
+									<option>15&ndash;20</option>
+									<option>20&ndash;25</option>
+									<option>25&ndash;30</option>
+									<option>30&ndash;35</option> 
+									<option>35&ndash;40</option>
+								</select> 
+								hour/hours per week between these days
+							</p>
+							
+							<ul id="availability">
+								<li><input type="checkbox" name="day" value="S">S</li>
+								<li><input type="checkbox" name="day" value="M">M</li>
+								<li><input type="checkbox" name="day" value="Tu">Tu</li>
+								<li><input type="checkbox" name="day" value="W">W</li>
+								<li><input type="checkbox" name="day" value="Th">Th</li>
+								<li><input type="checkbox" name="day" value="F">F</li>
+								<li><input type="checkbox" name="day" value="S">S</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<p>looking for a capstone project?</p>
+							<ul>
+								<li><input type="radio" name="capstone" value="yes">yes&#33;</li>
+								<li><input type="radio" name="capstone" value="no">no&#44; thank you&#33;</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+
+				<p class="icons-submit">
+					<input class="submit" type="submit" value="let's do this!" />
+					<input class="submit" type="reset" value="changed my mind" />
+				</p>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2017 MVP STUDIO&#46;</p> 
+				<p>ALL RIGHTS RESERVED&#46;</p>
+			</div>
+
+			<ul class="terms-privacy">
+				<li>
+					<a href="terms.html">TERMS OF USE</a>
+				</li><li>
+					<a href="privacy.html">PRIVACY POLICY</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

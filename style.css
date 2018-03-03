@@ -1,0 +1,956 @@
+@font-face {
+	font-family: 'Brandon';
+	src: url('fonts/brandon_bld.otf') format('opentype'),
+	     url('fonts/brandon_reg.otf') format('opentype'),
+	     url('fonts/brandon_reg_it.otf') format('opentype');
+	font-weight: normal, bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lulo Clean One';
+	src: url('fonts/yellow_design_studio_lulo_clean_one.otf') format('opentype'),
+		 url('fonts/yellow_design_studio_lulo_clean_one_bold.otf') format('opentype');
+	font-weight: normal, bold;
+}	
+
+/***************	 DESKTOP STYLES     *************/
+/* MAX-WIDTH SET: 1600px */
+
+
+/*******       BODY STYLES      *******/
+body {
+	width: 100%;
+	margin: auto;
+	
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+/*******       BACKGROUND STYLES PER PART      *******/
+body {
+	background-color: #35343f;
+}
+
+nav, 
+section, 
+footer {
+	padding: 0 5%;
+	color: #fff;
+}
+
+section,
+.content,
+.steps,
+.steps li,
+.icons, 
+.team,
+.icons li,
+.team li,
+.mvp-projects,
+.project,
+.copyright,
+.copyright p, 
+ul.terms-privacy,
+.terms-privacy li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.top-nav li,
+.steps,
+.steps li,
+.icons,
+.team,
+.icons li,
+.team li,
+.mvp-projects,
+.mvp-projects li,
+.project,
+.text, 
+.text-participating,
+.icons-participating,
+.icons-participating li,
+.copyright,
+.copyright p, 
+ul.terms-privacy,
+.terms-privacy li {
+	display: inline-block;
+}
+
+.icons,
+.icons li,
+.text {
+	vertical-align: top;
+}
+
+nav, 
+footer {
+	background-color: #e85a36;
+}
+
+
+/*******       MAX-WIDTH      *******/
+header, 
+.top-nav > ul, 
+.content, 
+h1 {
+	max-width: 1600px;
+	margin: auto;
+}
+
+
+/*******       HEADER STYLES      *******/
+header {
+	padding: 7% 5% 15%;
+
+	background-image: url('images/ksutuscscience-377-larger-resolution.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.logo {
+	width: 30%;
+}
+
+
+/*******       NAVIGATION STYLES      *******/
+a {
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.top-nav a, 
+.terms-privacy a,
+.mvp-projects a {
+	padding: 15px 5px;
+	color: #fff;
+}
+
+.top-nav a:visited, 
+.terms-privacy a:visited {
+	color: #bfbfbf;
+}
+
+.top-nav a:hover, 
+.terms-privacy a:hover {
+	background-color: #35343f;
+}
+ 
+.top-nav a:active, 
+a:focus, 
+.terms-privacy a:active, 
+a:focus {
+	color: #35343f;
+}
+
+.top-nav-hoverable-menu {
+	position: relative;
+	display: none;
+}
+
+/******     HOW IT WORKS PAGE STYLES:HOVER FOR EFFECTS;    ******/
+.gear-0:hover,
+.gear-1:hover,
+.gear-2:hover,
+.gear-3:hover,
+.gear-4:hover,
+.gear-5:hover {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gear-0:hover,
+.gear-2:hover {
+	background-image: url('images/single-gear-orange.svg');
+}
+
+.gear-1:hover,
+.gear-4:hover,
+.gear-5:hover {
+	background-image: url('images/single-gear-rot-cw-orange.svg');
+}
+
+.gear-3:hover {
+	background-image: url('images/single-gear-rot-ccw-orange.svg');
+}
+
+/******     SHOWCASE PAGE STYLES:HOVER FOR EFFECTS;    ******/
+.project-name:hover {
+	color: #e85a36;
+}
+
+
+/*******       LIST STYLES      *******/
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#menu {
+	display: none;
+}
+
+.top-nav > ul {
+	vertical-align: middle;
+	padding: 15px 0;
+
+	font-family: 'Lulo Clean One', sans-serif;
+	font-weight: normal;
+	font-size: 0.9em;
+	text-align: right;
+}
+
+.top-nav li {
+	vertical-align: middle;
+	padding: 0 10px;
+}
+
+/******     HOME PAGE ICONS (INTERNS, DEVELOPERS, SPONSORS, CLIENTS), 
+                     WHO WE ARE, AND SHOWCASE PAGE LIST STYLES)               ******/
+
+.icons,
+.team {
+	width: 58%;
+	padding-top: 2%;
+
+	/*background-color: #0fc;*/
+}
+
+.icons-participating {
+	width: 40%;
+	padding-top: 4%;
+	vertical-align: top;
+
+	/*background-color: #0fc;*/
+}
+
+.icons li,
+.team li,
+.icons-participating li {
+	width: 25%;
+	padding-left: 6%;
+	margin: 0;
+
+	/*background-color: #66f;*/
+}
+
+.icons li img,
+.team-member li img {
+	width: 100%;
+	height: auto;
+}
+
+.team-member li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.team-member-title, 
+.team-member-name {
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
+}
+
+.team-member-title {
+	font-size: 1em;
+}
+
+.team-member-name {
+	font-size: 1.6em;
+}
+
+/******     HOW IT WORKS PAGE LIST STYLES    ******/
+.steps {
+	width: 100%;
+	margin: 0;
+	font-size: 1.125em;
+	text-align: center;
+
+	/*background-color: #66f;*/
+}
+
+.steps li {
+	line-height: 25px;
+	border-radius: 50%;
+	vertical-align: middle;
+
+	/*background-color: #099;*/
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.gear-0 {
+	width: 250px;
+	height: 250px;
+	padding: 100px 30px 0.5%;
+	font-size: 1.5em;
+
+	background-image: url('images/single-gear.svg');
+
+	transform: translate(40%, 40%);
+}
+
+.gear-1 {
+	width: 175px;
+	height: 175px;
+	padding: 60px 30px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	transform: translate(40%, 0);
+}
+
+.gear-2 {
+	width: 200px;
+	height: 200px;
+	padding: 75px 40px 0.5%;
+
+	background-image: url('images/single-gear.svg');
+
+	transform: translate(12%, 58%);
+}
+
+.gear-3 {
+	width: 185px;
+	height: 185px;
+	padding: 50px 40px 0.5%;
+
+	background-image: url('images/single-gear-rot-ccw.svg');
+
+	transform: translate(-11%, -5%);
+}
+
+.gear-4 {
+	width: 200px;
+	height: 200px;
+	padding: 55px 40px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	transform: translate(-13%, 15%);
+}
+
+.gear-5 {
+	width: 175px;
+	height: 175px;
+	padding: 50px 25px 0.5%;
+
+	background-image: url('images/single-gear-rot-cw.svg');
+
+	transform: translate(-25%, -22%);
+}
+
+.sub-choices {
+	display: none;
+}
+
+.choice.checked > .sub-choices {
+	display: block;
+}
+
+
+
+/******     SHOWCASE PAGE LIST STYLES    ******/
+.mvp-projects {
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.mvp-projects li {
+	padding: 3% 5%;
+}
+
+.project li {
+	width: 100%;
+	display: block;
+}
+
+.project-name {
+	font-family: 'Brandon', sans-serif;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+
+
+/*******       HEADLINE STYLES      *******/
+h1 {
+	padding: 10px 0 0 0;
+	
+	font-family: 'Lulo One Clean', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.heading-centered {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*******       SECTION STYLES      *******/
+section {
+	overflow: hidden;
+	padding: 5%;
+}
+
+.text {
+	width: 37%;
+	margin-right: 4%;
+	padding: 3% 0;
+	font-size: 1.25em;
+
+	/*background-color: #9f6;*/
+}
+
+.text p {
+	margin: 0;
+}
+
+.text-participating {
+	width: 45%;
+	margin-right: 4%;
+	padding: 3% 0;
+	font-size: 1.25em;
+}
+
+.steps {
+	padding: 3% 0 10%;
+}
+
+
+/*******       FORM STYLES      *******/
+.icons-submit {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 50px auto 30px;
+}
+
+input[type="submit"], 
+[type="reset"] {
+	background-color: transparent;
+	border: none;
+
+	font-family: 'Lulo Clean One', sans-serif;
+	font-weight: normal;
+	font-size: 0.75em;
+	color: #fff;
+	padding: 0 2.5% 0;
+
+	cursor: pointer;
+}
+
+.submit:hover {
+	color:#e85a36;
+}
+
+/*******       FOOTER STYLES      *******/
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 0 5%;
+	/*overflow: hidden;*/
+
+	font-family: "Lulo Clean One", sans-serif;
+	font-weight: normal;
+	font-size: .65em;
+}
+
+.copyright {
+	width: 45%;
+	margin: 0;
+	padding: 10px 0;
+	text-align: left;
+}
+
+.copyright p {
+	margin: 0;
+	padding-right: 5%;
+}
+
+ul.terms-privacy {
+	width: 45%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 8%;
+	padding: 10px 0;
+	text-align: right;
+}
+
+.terms-privacy li {
+	padding-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************       MEDIA QUERIES      *******************/
+
+/***************	 TABLET STYLES     *************/
+/* MAX-WIDTH SET: 1024px */
+
+/* Screen Resolution: max 1024px */
+@media screen and (max-width: 1024px) {
+	/*******       HEADER STYLES      *******/
+	header { 
+		background-image: url('images/ksutuscscience-377-1100px.jpg');
+		background-size: 100%;
+	}
+
+
+	/*******       SECTION STYLES      *******/
+	.text {
+		width: 49%;
+	}
+
+	.text p {
+		font-size: 2.25vw;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.icons {
+		width: 45%;
+		padding-bottom: 5%;
+	}
+
+	.icons li {
+		width: 50%;
+		padding-left: 20%;
+		margin: 0;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 51%;
+	}
+
+	ul.terms-privacy {
+		margin-bottom: 0;
+		margin-left: 2%;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 841px */
+@media screen and (max-width: 841px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+	}
+
+	ul.terms-privacy {
+		width: 40%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+/* Screen Resolution: max 818px */
+@media screen and (max-width: 818px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 57%;
+	}
+
+	ul.terms-privacy {
+		width: 41%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+/* Screen Resolution: max 798px */
+@media screen and (max-width: 798px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 56%;
+	}
+
+	ul.terms-privacy {
+		width: 42%;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 779px */
+@media screen and (max-width: 779px) {
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+		padding: 0;
+	}
+
+	.copyright p {
+		padding: 15px 0;
+		display: block;
+	}
+
+	ul.terms-privacy {
+		width: 41%;
+		padding: 0;
+	}
+
+	.terms-privacy li {
+		padding: 15px 0;
+		display: block;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 714px*/
+@media screen and (max-width: 714px) {
+	/*******       NAVIGATION STYLES      *******/
+	.top-nav a, 
+	.terms-privacy a {
+		padding: 15px 5px;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.top-nav > ul {
+		padding: 15px 0;
+		text-align: center;
+	}
+
+	.top-nav li {
+		font-size: 0.9em;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 700px*/
+@media screen and (max-width: 700px) {
+	/*******       BODY STYLES      *******/
+	header {
+		background-image: url('images/ksutuscscience-377-875px.jpg');
+	}
+
+
+	/*******       HEADER STYLES      *******/
+	.logo {
+		width: 30vw;
+	}
+
+
+	/*******       SECTION STYLES      *******/
+	.text {
+		width: 100%;
+	}
+
+	.text p {
+		font-size: 1em;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.icons {
+		width: 100%;
+		display: block;
+		padding-bottom: 5%;
+	}
+
+	.icons li {
+		width: 25%;
+		padding: 0 3%;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 60%;
+	}
+
+	ul.terms-privacy {
+		width: 39%;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max - 660px */
+@media screen and (max-width: 660px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		font-size: .85em;
+		padding: 0 1%;
+	}
+}
+
+
+
+
+
+/* Screen Resolution: max 628px*/
+@media screen and (max-width: 628px) {
+	/*******       SECTION STYLES      *******/	
+	.text p {
+		font-size: .95em;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	.copyright {
+		width: 58%;
+	}
+
+
+	ul.terms-privacy {
+		width: 40%;
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+/* Screen Resolution: max 589px */
+@media screen and (max-width: 589px) {
+	.text p {
+		font-size: .9em;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 580px */
+@media screen and (max-width: 580px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		padding: 0 0.75%;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 562px */
+@media screen and (max-width: 562px) {
+	/*******       LIST STYLES      *******/
+	.top-nav li {
+		padding: 0 0.5%;
+	}
+}
+
+
+
+
+
+
+/* Screen Resolution: max 480px */
+@media screen and (max-width: 480px) {
+	/*******       BACKGROUND STYLES      *******/
+	nav {
+		background-color: transparent;
+	}
+
+
+	/*******       BODY STYLES      *******/
+	body {
+		/*padding-top: 25%;*/
+
+		background-image: url('images/ksutuscscience-377-560px.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		/*background-attachment: fixed;*/
+	}
+
+
+	/*******       HEADER STYLES      *******/
+	header {
+		background-image: none;
+		background-color: #35343f;
+		padding: 5% 5% 3%;
+		margin-bottom: 35%;
+
+		border-bottom: 15px solid #e85a36;
+	}
+
+	section {
+		border-top: 15px solid #e85a36;
+	}
+
+
+	/*******       LIST STYLES      *******/
+	.top-nav-normal-menu, 	.btn-hamburger-js-slideout-toggle {
+		display: none;
+	}
+
+	#menu {
+		width: 63%;
+		padding: 0;
+		display: inline-block;
+		text-align: right;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}/*
+
+	.top-nav-hoverable-menu {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 63%;
+		text-align: right;
+	}*/
+
+	.dropbtn {
+		color: #fff;
+		border: none;
+		cursor: pointer;
+
+		font-family: 'Lulo Clean One', sans-serif;
+		font-weight: normal;
+		font-size: 0.9em;
+	}
+
+	.dropdown {
+		display: inline-block;
+		position: relative;
+	}
+
+	.dropdown-content {
+		display: none;
+		background-color: #35343f;
+		position: absolute;
+		z-index: 1;
+		right: 0;
+
+		text-align: right;
+		font-size: .8em;
+		font-weight: bold;
+	}
+
+	.dropdown-content ul {
+		/*margin: 0 25px;*/
+		padding: 0 25px;
+	}
+
+	.dropdown-content li {
+		/*width: 100%;*/
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-content a {
+		display: inline-block;
+		color: #fff;
+	}
+
+	.dropdown-content a:link {
+		padding: 10px 25px;
+		width: 80%;
+	}
+
+	.dropdown-content a:visited {
+		color: #c8c7d1;
+	}
+
+	.dropdown-content a:hover {
+		color: #e85a36;
+		padding: 10px 25px;
+	}
+
+	h1 {
+		font-size: 6vw;
+	}
+
+	.icons li {
+		width: 50%;
+		padding: 5% 8%;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 396px) {
+	/*******       LIST STYLES      *******/
+	.terms-privacy a:hover {
+		background-color: transparent;
+	}
+
+
+	/*******       FOOTER STYLES      *******/
+	footer {
+		position: relative;
+	}
+
+	.copyright,  ul.terms-privacy {
+		display: block;
+		width: 100%;
+	}
+
+	.copyright {
+		padding-top: 10px;
+	}
+
+	.copyright p {
+		text-align: center;
+		padding: 15px 0;
+	}
+
+	.terms-privacy li {
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+	}
+}
+

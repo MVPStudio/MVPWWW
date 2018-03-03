@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- UNDERSTANDING THE CHARSETS: 
+		"&#ndash;" = "-", 
+		"&#33;" = "!", 
+		"&#36;" = "$", 
+		"&#39" = "'", 
+		"&#40;" = "(", 
+		"&#41;" = ")", 
+		"&#44;" = ",", 
+		"&#46;" = "." 
+	-->		
+</head>
+
+<body id="page-wrapper">
+	<header>
+		<a href="index.html"><img src="images/mvp-logo-white.svg" alt="MVP logo white" class="logo"></a>
+
+		<!--  This menu appears at a max of 554px -->
+		<nav id="menu">
+			<div class="dropdown">
+				<button class="dropbtn">MENU</button>
+				<button class="btn-hamburger-js-slideout-toggle"></button> 
+				<div class="dropdown-content">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="us.html">WHO WE ARE</a></li>
+						<li><a href="how.html">HOW IT WORKS</a></li>
+						<li><a href="showcase.html">SHOWCASE</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div id="page-content">
+		<nav class="top-nav">
+			<ul class="top-nav-normal-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="us.html">WHO WE ARE</a></li>
+				<li><a href="how.html">HOW IT WORKS</a></li>
+				<li><a href="showcase.html">SHOWCASE</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<h1>CONTACT US</h1>
+
+			<div class="content">
+				<div class="text">
+					<p>We are here to help bring people together to make projects possible&#33; If something is causing you to question anything about joining in this awesome feat&#44; please let us know&#46; We want to help&#33; The only request we ask of you specifially is to address the area you are wondering about&#46; Then be on the lookout for our response within 1 to 2 business days&#46;</p>
+				</div>
+
+				<div class="comment-form">
+					<form action="/form-api/v/1/t/contact" method="post">
+						<fieldset>
+							<ul>
+								<li><label>name<br>
+									<input type="text" name="name" id="form-name" maxlength="100" required></label></li>
+								<li><label>email<br>
+									<input type="email" name="email" id="form-email" maxlength="100" required></label></li>
+							</ul>
+						</fieldset>
+
+						<fieldset>	
+							<p>comments<br>
+								<textarea name="comment" id="form-comment" rows="3" cols="30"></textarea>
+							</p>
+					</form>
+				</div>
+
+				<p class="icons-submit">
+					<input class="submit" type="submit" value="let's do this!" />
+					<input class="submit" type="reset" value="changed my mind" />
+				</p>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				<p>&copy; 2017 MVP STUDIO&#46;</p> 
+				<p>ALL RIGHTS RESERVED&#46;</p>
+			</div>
+
+			<ul class="terms-privacy">
+				<li>
+					<a href="terms.html">TERMS OF USE</a>
+				</li><li>
+					<a href="privacy.html">PRIVACY POLICY</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
